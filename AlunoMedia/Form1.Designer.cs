@@ -31,14 +31,15 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Nota1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Nota2 = new System.Windows.Forms.ComboBox();
-            this.Nota3 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.Nota4 = new System.Windows.Forms.ComboBox();
+            this.Nota3 = new System.Windows.Forms.ComboBox();
+            this.Nota2 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Nota1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +47,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +72,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtCode);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.Nota4);
             this.groupBox1.Controls.Add(this.Nota3);
@@ -90,40 +94,39 @@
             this.groupBox1.Text = "Notas Aluno";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
-            // Nota1
+            // button1
             // 
-            this.Nota1.FormattingEnabled = true;
-            this.Nota1.Location = new System.Drawing.Point(148, 85);
-            this.Nota1.Name = "Nota1";
-            this.Nota1.Size = new System.Drawing.Size(121, 33);
-            this.Nota1.TabIndex = 2;
+            this.button1.Location = new System.Drawing.Point(60, 349);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(148, 55);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Enviar Notas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // label2
+            // Nota4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nota 1";
+            this.Nota4.FormattingEnabled = true;
+            this.Nota4.Location = new System.Drawing.Point(148, 236);
+            this.Nota4.Name = "Nota4";
+            this.Nota4.Size = new System.Drawing.Size(121, 33);
+            this.Nota4.TabIndex = 9;
             // 
-            // label3
+            // Nota3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Nota 2";
+            this.Nota3.FormattingEnabled = true;
+            this.Nota3.Location = new System.Drawing.Point(148, 183);
+            this.Nota3.Name = "Nota3";
+            this.Nota3.Size = new System.Drawing.Size(121, 33);
+            this.Nota3.TabIndex = 8;
             // 
-            // label4
+            // Nota2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Nota 3";
+            this.Nota2.FormattingEnabled = true;
+            this.Nota2.Location = new System.Drawing.Point(148, 130);
+            this.Nota2.Name = "Nota2";
+            this.Nota2.Size = new System.Drawing.Size(121, 33);
+            this.Nota2.TabIndex = 7;
             // 
             // label5
             // 
@@ -134,29 +137,40 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Nota 4";
             // 
-            // Nota2
+            // label4
             // 
-            this.Nota2.FormattingEnabled = true;
-            this.Nota2.Location = new System.Drawing.Point(148, 130);
-            this.Nota2.Name = "Nota2";
-            this.Nota2.Size = new System.Drawing.Size(121, 33);
-            this.Nota2.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 25);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Nota 3";
             // 
-            // Nota3
+            // label3
             // 
-            this.Nota3.FormattingEnabled = true;
-            this.Nota3.Location = new System.Drawing.Point(148, 183);
-            this.Nota3.Name = "Nota3";
-            this.Nota3.Size = new System.Drawing.Size(121, 33);
-            this.Nota3.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Nota 2";
             // 
-            // Nota4
+            // label2
             // 
-            this.Nota4.FormattingEnabled = true;
-            this.Nota4.Location = new System.Drawing.Point(148, 236);
-            this.Nota4.Name = "Nota4";
-            this.Nota4.Size = new System.Drawing.Size(121, 33);
-            this.Nota4.TabIndex = 9;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nota 1";
+            // 
+            // Nota1
+            // 
+            this.Nota1.FormattingEnabled = true;
+            this.Nota1.Location = new System.Drawing.Point(148, 85);
+            this.Nota1.Name = "Nota1";
+            this.Nota1.Size = new System.Drawing.Size(121, 33);
+            this.Nota1.TabIndex = 2;
             // 
             // dataGridView1
             // 
@@ -212,15 +226,21 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
-            // button1
+            // txtCode
             // 
-            this.button1.Location = new System.Drawing.Point(48, 308);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 55);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Enviar Notas";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.txtCode.Location = new System.Drawing.Point(148, 299);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(161, 31);
+            this.txtCode.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Code";
             // 
             // Form1
             // 
@@ -260,6 +280,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -41,7 +41,7 @@ namespace AlunoMedia
                 }
             }
         }
-        List<Aluno> aluninho = new List<Aluno>;
+        List<Aluno> aluninho = new List<Aluno>();
         private void Button1_Click(object sender, EventArgs e)
         {
             Aluno student = new Aluno();

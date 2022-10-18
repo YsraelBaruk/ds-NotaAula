@@ -14,6 +14,7 @@ namespace AlunoMedia
         public double nota4;
         public string nome;
         public double media;
+        public int code;
 
         public double Calcmedia()
         {

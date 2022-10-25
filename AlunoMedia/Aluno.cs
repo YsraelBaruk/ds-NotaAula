@@ -15,7 +15,6 @@ namespace AlunoMedia
         public string nome;
         public int ra;
         public double media;
-        public string situacao;
 
         //public Aluno(double nota1, double nota2, double nota3, double nota4, string nome, int code)
         //{

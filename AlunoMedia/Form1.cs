@@ -75,7 +75,7 @@ namespace AlunoMedia
             bool existe = false;
             foreach (Aluno p in aluninho)
             {
-                if (p.ra == aluninho.ra)
+                if (p.ra == student.ra)
                     existe = true;
             }
 
@@ -89,6 +89,12 @@ namespace AlunoMedia
             {
                 MessageBox.Show("Produto já existe, insira outro código", "Alerta");
             }            
+        }
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //Forms.r form = new Forms.Listar();
+
         }
     }
 }

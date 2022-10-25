@@ -14,6 +14,7 @@ namespace AlunoMedia
         public double nota4;
         public string nome;
         public int ra;
+        public double media;
         public string situacao;
 
         //public Aluno(double nota1, double nota2, double nota3, double nota4, string nome, int code)
@@ -26,34 +27,46 @@ namespace AlunoMedia
         //    this.code = code;
         //}
 
-        public string Calcmedia()
+        public double Calcmedia()
         {
-            double media;
-            string msg;
-            
-            if (this.nota1 < 1 || this.nota1 > 10)
-            {
-                return msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
-            }
-            else if (this.nota2 < 1 || this.nota2 > 10)
-            {
-                return msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
-            }
-            else if (this.nota3 < 1 || this.nota3 > 10)
-            {
-                return msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
-            }
-            else if (this.nota4 < 1 || this.nota4 > 10)
-            {
-                return msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
-            }
+            //string msg;
 
-            media = ((this.nota1 * 2) + (this.nota2 * 3) + (this.nota3 * 2) + (this.nota4 * 3)) / 4;
-            return msg = $"A sua média é {media}";
+            //if (this.nota1 < 1 || this.nota1 > 10)
+            //{
+            //    msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
+            //}
+            //else if (this.nota2 < 1 || this.nota2 > 10)
+            //{
+            //    msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
+            //}
+            //else if (this.nota3 < 1 || this.nota3 > 10)
+            //{
+            //    msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
+            //}
+            //else if (this.nota4 < 1 || this.nota4 > 10)
+            //{
+            //    msg = "Não é permitido colocar esse tipo de número, apenas de 1 a 10";
+            //}
+
+            return this.media = ((this.nota1 * 2) + (this.nota2 * 3) + (this.nota3 * 2) + (this.nota4 * 3)) / 4;
+            
         }
 
         //media < 4 REPROVADO
         //media < 6 RECUPERAÇÃO
         //else { aprovado }
+        public string Situacao()
+        {
+            string msg;
+            if (this.media < 4)
+            {
+                return msg = "Reprovado";
+            }
+            else if (this.media < 6)
+            {
+                return msg = "Recuperação";
+            }
+            return msg = "Aprovado";
+        }
     }
 }

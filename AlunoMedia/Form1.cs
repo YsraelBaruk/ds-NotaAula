@@ -42,12 +42,22 @@ namespace AlunoMedia
             }
         }
         List<Aluno> aluninho = new List<Aluno>();
+        //aluninho.Add(New Aluno() {} );
+
         public void carregarLista()
         {
             dataGridView1.Rows.Clear();
             foreach(Aluno s in aluninho)
-            {
-                dataGridView1.Rows.Add(s.nome, s.ra, s.nota1, s.nota2, s.nota3, s.nota4, s.Calcmedia());
+            {                
+                dataGridView1.Rows.Add(
+                    s.nome, 
+                    s.ra, 
+                    s.nota1, 
+                    s.nota2, 
+                    s.nota3, 
+                    s.nota4, 
+                    s.Calcmedia(), 
+                    s.Situacao());
             }
         }
 
@@ -68,6 +78,7 @@ namespace AlunoMedia
                 if (p.ra == aluninho.ra)
                     existe = true;
             }
+
             if (!existe)
             {
                 aluninho.Add(student);

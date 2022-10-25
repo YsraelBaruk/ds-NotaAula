@@ -15,3 +15,6 @@ C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.G
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.CoreCompileInputs.cache
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.exe
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.pdb
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe.config
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.pdb

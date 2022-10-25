@@ -8,3 +8,10 @@ C:\Users\Aluno-ETEC\Desktop\AlunoMedia\AlunoMedia\obj\Debug\AlunoMedia.csproj.Ge
 C:\Users\Aluno-ETEC\Desktop\AlunoMedia\AlunoMedia\obj\Debug\AlunoMedia.csproj.CoreCompileInputs.cache
 C:\Users\Aluno-ETEC\Desktop\AlunoMedia\AlunoMedia\obj\Debug\AlunoMedia.exe
 C:\Users\Aluno-ETEC\Desktop\AlunoMedia\AlunoMedia\obj\Debug\AlunoMedia.pdb
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csprojAssemblyReference.cache
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.Form1.resources
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.Properties.Resources.resources
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.GenerateResource.cache
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.CoreCompileInputs.cache
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.exe
+C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.pdb

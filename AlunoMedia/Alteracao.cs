@@ -48,17 +48,12 @@ namespace AlunoMedia
             if (txtNF2.Text == txtNomeF2.Text)
             {
                 MessageBox.Show("Operação realizada com sucesso!!!");
-                this.f.carregarLista();
+                f.carregarLista();
             }
             else
             {
                 MessageBox.Show("Ops deu alguma coisa errada", "Erro");
             }
-
-        }
-
-        private void Alteracao_Load(object sender, EventArgs e)
-        {
 
         }
     }

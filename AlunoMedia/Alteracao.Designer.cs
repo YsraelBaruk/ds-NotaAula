@@ -43,8 +43,8 @@ namespace AlunoMedia
             this.txtRaF2 = new System.Windows.Forms.TextBox();
             this.txtNomeF2 = new System.Windows.Forms.TextBox();
             this.Alterar = new System.Windows.Forms.Button();
-            this.Excluir = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -55,7 +55,6 @@ namespace AlunoMedia
             this.label11 = new System.Windows.Forms.Label();
             this.txtN3F2 = new System.Windows.Forms.TextBox();
             this.txtN4F2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -191,16 +190,6 @@ namespace AlunoMedia
             this.Alterar.UseVisualStyleBackColor = true;
             this.Alterar.Click += new System.EventHandler(this.Alterar_Click);
             // 
-            // Excluir
-            // 
-            this.Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.Excluir.Location = new System.Drawing.Point(548, 332);
-            this.Excluir.Name = "Excluir";
-            this.Excluir.Size = new System.Drawing.Size(107, 45);
-            this.Excluir.TabIndex = 0;
-            this.Excluir.Text = "Excluir";
-            this.Excluir.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
@@ -221,6 +210,17 @@ namespace AlunoMedia
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados Antecedentes";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.button1.Location = new System.Drawing.Point(141, 239);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(138, 36);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Enviar Dados";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -307,30 +307,17 @@ namespace AlunoMedia
             this.txtN4F2.Size = new System.Drawing.Size(100, 26);
             this.txtN4F2.TabIndex = 19;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button1.Location = new System.Drawing.Point(141, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 36);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Enviar Dados";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Alteracao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(685, 459);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.Excluir);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Alteracao";
             this.Text = "Alteracao";
-            this.Load += new System.EventHandler(this.Alteracao_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -355,7 +342,6 @@ namespace AlunoMedia
         private System.Windows.Forms.TextBox txtRaF2;
         private System.Windows.Forms.TextBox txtNomeF2;
         private System.Windows.Forms.Button Alterar;
-        private System.Windows.Forms.Button Excluir;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;

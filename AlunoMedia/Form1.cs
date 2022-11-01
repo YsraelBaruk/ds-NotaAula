@@ -64,14 +64,12 @@ namespace AlunoMedia
         private void Button1_Click(object sender, EventArgs e)
         {
             Aluno student = new Aluno();
-
-
-            student.nome = txtNome.Text;
-            student.ra = Convert.ToInt32(txtCode.Text); //RA
-            student.nota1 = Convert.ToDouble(Nota1.Text);
-            student.nota2 = Convert.ToDouble(Nota2.Text);
-            student.nota3 = Convert.ToDouble(Nota3.Text);
-            student.nota4 = Convert.ToDouble(Nota4.Text);
+                student.nota1 = Convert.ToDouble(Nota1.Text);
+                student.nota2 = Convert.ToDouble(Nota2.Text);
+                student.nota3 = Convert.ToDouble(Nota3.Text);
+                student.nota4 = Convert.ToDouble(Nota4.Text);
+                student.nome = txtNome.Text;
+                student.ra = Convert.ToInt32(txtCode.Text); //RA
 
             bool existe = false;
             foreach (Aluno p in aluninho)
@@ -95,10 +93,6 @@ namespace AlunoMedia
             {
                 txtCode.Clear();
                 txtNome.Clear();
-                Nota1.Items.Clear();
-                Nota2.Items.Clear();
-                Nota3.Items.Clear();
-                Nota4.Items.Clear();
                 txtNome.Focus();
             }
         }
@@ -151,9 +145,15 @@ namespace AlunoMedia
             //txtN4F2
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            //aluninho.
+
+        }
+
+        private void Exclude_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow == null) return;
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
         }
     }
 }

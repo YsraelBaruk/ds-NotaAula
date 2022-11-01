@@ -19,15 +19,26 @@ namespace AlunoMedia
         public double media;
         public string msgErro;
 
-        //public Aluno(double nota1, double nota2, double nota3, double nota4, string nome, int code)
-        //{ 
-        //    this.nota1 = nota1;
-        //    this.nota2 = nota2;
-        //    this.nota3 = nota3;
-        //    this.nota4 = nota4;
-        //    this.nome = nome;
-        //    this.code = code;
-        //}
+        public double Nota1 { get => nota1; set => nota1 = value; }
+        public double Nota2 { get => nota2; set => nota2 = value; }
+        public double Nota3 { get => nota3; set => nota3 = value; }
+        public double Nota4 { get => nota4; set => nota4 = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public int Ra { get => ra; set => ra = value; }
+        public double Media { get => media; set => media = value; }
+        public string MsgErro { get => msgErro; set => msgErro = value; }
+
+        public Aluno(double nota1, double nota2, double nota3, double nota4, string nome, int ra)
+        {
+            this.nota1 = nota1;
+            this.nota2 = nota2;
+            this.nota3 = nota3;
+            this.nota4 = nota4;
+            this.nome = nome;
+            this.ra = ra;
+        }
+
+        public Aluno() { }
 
         public double Calcmedia()
         {

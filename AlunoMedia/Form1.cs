@@ -35,14 +35,9 @@ namespace AlunoMedia
                 Nota2.Items.Add(x.ToString());
                 Nota3.Items.Add(x.ToString());
                 Nota4.Items.Add(x.ToString());
-                //if(x > 11 && x < 0)
-                //{
-                //    MessageBox.Show("Não é permitido numeros maiores que 10 ou menores que 0", "Alerta");
-                //}
             }
         }
         List<Aluno> aluninho = new List<Aluno>();
-        //aluninho.Add(New Aluno() {} );
 
         public void carregarLista()
         {
@@ -61,6 +56,18 @@ namespace AlunoMedia
             }
         }
 
+        public Aluno buscarAlunoPorRa(int ra)
+        {
+            foreach (Aluno a in aluninho)
+            {
+                if (a.Ra == ra)
+                {
+                    return a;
+                }
+            }
+            return null;
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             Aluno student = new Aluno();
@@ -71,14 +78,9 @@ namespace AlunoMedia
                 student.nome = txtNome.Text;
                 student.ra = Convert.ToInt32(txtCode.Text); //RA
 
-            bool existe = false;
-            foreach (Aluno p in aluninho)
-            {
-                if (p.ra == student.ra)
-                    existe = true;
-            }
+            
 
-            if (!existe)
+            if (buscarAlunoPorRa(student.ra) == null)
             {
                 aluninho.Add(student);
                 carregarLista();
@@ -100,17 +102,10 @@ namespace AlunoMedia
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {            
             DataGridViewRow aln = dataGridView1.Rows[e.RowIndex];
-            string nome = aln.Cells[0].Value.ToString();
             int ra = Convert.ToInt32(aln.Cells[1].Value.ToString());
-            double nota1 = Convert.ToDouble(aln.Cells[2].Value.ToString());
-            double nota2 = Convert.ToDouble(aln.Cells[3].Value.ToString());
-            double nota3 = Convert.ToDouble(aln.Cells[4].Value.ToString());
-            double nota4 = Convert.ToDouble(aln.Cells[5].Value.ToString());
 
-            Alteracao alteracao = new Alteracao(nome, ra, nota1, nota2, nota3, nota4);
+            Alteracao alteracao = new Alteracao(Aluno aluno, Form1 form1);
             alteracao.Show();
-
-
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -119,35 +114,10 @@ namespace AlunoMedia
 
         private void alterarDadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //int numero = Convert.ToInt32(txtNumero.Text);
-            //double valor = Convert.ToDouble(txtValor.Text);
-            //Transferir t = new Transferir(numero, valor, this);
-            //t.Show();
-            //filme.Add(new Filme() { Nome = "Homem Aranha", Ano = 2002, Avaliacao = 7, Sinopse = "Quando o morde uma aranha, o inteligente, e tímido Peter Parker ganha habilidades que deberá usar para lutar contra o mal.", Genero = "Ação" });
-            //filme.Add(new Filme() { Nome = "Batman", Ano = 2022, Avaliacao = 7, Sinopse = "Batman se aventura no submundo de Gotham City quando um assassino sádico deixa para trás um rastro de pistas enigmáticas.", Genero = "Ação" });
-            //filme.Add(new Filme() { Nome = "Tropa de Elite", Ano = 2007, Avaliacao = 8, Sinopse = "Em 1997, o capitão Nascimento tem que encontrar seu substituto enquanto luta contra os narcotraficantes e criminais.", Genero = "Ação" });
-            //filme.Add(new Filme() { Nome = "Sing", Ano = 2016, Avaliacao = 7, Sinopse = "Numa cidade de animais humanóides, o dono dum teatro organiza uma competiçao de canto para salvar seu teatro.", Genero = "Animação" });
-            //filme.Add(new Filme() { Nome = "Matrix", Ano = 1999, Avaliacao = 8, Sinopse = "Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.", Genero = "Ação" });
-
-            //foreach (var f in filme)
-            //{
-            //    dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
-            //}
-            //txtNota1F2.Text
-            //txtNota2F2.Text
-            //txtNota3F2.Text
-            //txtNota4F2.Text
-
-            //txtNF2
-            //txtN1F2
-            //txtN2F2
-            //txtN3F2
-            //txtN4F2
         }
 
         private void DataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-
         }
 
         private void Exclude_Click(object sender, EventArgs e)

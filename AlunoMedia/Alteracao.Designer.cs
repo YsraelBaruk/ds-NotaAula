@@ -318,6 +318,7 @@ namespace AlunoMedia
             this.MaximizeBox = false;
             this.Name = "Alteracao";
             this.Text = "Alteracao";
+            this.Load += new System.EventHandler(this.Alteracao_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

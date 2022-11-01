@@ -6,7 +6,7 @@ using System.Threading.Tasks;
   
 namespace AlunoMedia
 {
-    class Aluno
+    public class Aluno
     {
         public List<Aluno> aluninho = new List<Aluno>();
 

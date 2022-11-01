@@ -18,3 +18,14 @@ C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.pdb
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe.config
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe
 C:\Users\Aluno-ETEC\Desktop\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.pdb
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.AssemblyReference.cache
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.Form1.resources
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.Properties.Resources.resources
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.GenerateResource.cache
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.csproj.CoreCompileInputs.cache
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.exe
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.pdb
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe.config
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.exe
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\bin\Debug\AlunoMedia.pdb
+C:\Users\israe\Favorites\Tarefas de Escola\ds-NotaAula\AlunoMedia\obj\Debug\AlunoMedia.Alteracao.resources
